@@ -1,0 +1,175 @@
+:root {
+  /* primary */
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--violet);
+  padding-bottom: 6.700167504187605vh;
+}
+
+header {
+  padding: 11.22278056951424vh 5.555555555555556vw;
+}
+
+.huddle-logo {
+  width: 13.88888888888889vw;
+  height: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 5.555555555555556vw;
+}
+
+.illustrations {
+  width: 48.26388888888889vw;
+  height: 82.91457286432161;
+}
+
+.introduction {
+  padding-inline: 4.166666666666667vw;
+  color: white;
+}
+
+.introduction__title {
+  font-size: calc(18.4px + 1.5vw);
+}
+
+.introduction__description {
+  font-size: calc(4.1px + 1vw);
+  margin-top: 6.700167504187605vh;
+}
+
+.introduction__register {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  display: block;
+  width: 13.88888888888889vw;
+  margin-top: 5.025125628140704vh;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  font-size: calc(4.1px + 1vw);
+  padding-block: 1.675041876046901vh;
+  text-align: center;
+}
+
+.introduction__register:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+.socials {
+  margin-top: 30.4857621440536vh;
+  text-align: right;
+}
+
+.socials button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.socials button:hover {
+  border: 2px solid var(--soft-magenta);
+}
+
+.socials button:hover a {
+  color: var(--soft-magenta);
+}
+
+.socials button:not(:last-of-type) {
+  margin-right: 1.041666666666667vw;
+}
+
+.socials button a {
+  color: white;
+  display: block;
+  height: 100%;
+  border-radius: 50%;
+  padding-block: 1.842546063651591vh;
+}
+
+@media (min-width: 2000px) {
+  .socials button {
+    height: 80px;
+    width: 80px;
+  }
+
+  .socials button a {
+    font-size: clamp(1rem, calc(10.4px + 1.5vw), 2rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .socials {
+    margin-top: 91px;
+  }
+}
+
+@media (max-width: 538px) {
+  main {
+    grid-template-columns: 592px;
+    padding-inline: 10.66666666666667vw;
+    text-align: center;
+  }
+
+  .illustrations {
+    width: 540px;
+    height: 415px;
+  }
+
+  .introduction {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 75px;
+  }
+
+  .introduction__title {
+    font-size: 3.125rem;
+  }
+
+  .introduction__description {
+    font-size: 2rem;
+  }
+
+  .introduction__register {
+    margin-inline: auto;
+    font-size: 2rem;
+    width: 400px;
+  }
+
+  .socials {
+    text-align: center;
+    margin-top: 23.42007434944238vh;
+  }
+
+  .socials button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socials button a {
+    font-size: 1.875rem;
+    padding-block: 22px;
+  }
+
+  .huddle-logo {
+    width: 64vw;
+  }
+}
